@@ -1,13 +1,13 @@
 ---
 - name: testing webhook
-  hosts: all
+  hosts: local
   gather_facts: no
   connection: local
 
   tasks:
     - name: messaging teams
       cisco_spark:
-        recipient_type: toPersonalEmail
+        recipient_type: toPersonEmail
         recipient_id: "slight@cisco.com"
         message_type: text
         personal_token: "ZmYwMjRmYjEtNWM4ZC00NGQ0LTk3NmMtNTZhZDE1ZmM0OTc4ZDEzMTk4OWUtMDhj_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
