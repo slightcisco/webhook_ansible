@@ -8,7 +8,7 @@
     - name: messaging teams
       cisco_spark:
         recipient_type: roomId
-        recipient_id: {{RoomId}}
+        recipient_id: "{{RoomId}}"
         message_type: text
         personal_token: "ZmYwMjRmYjEtNWM4ZC00NGQ0LTk3NmMtNTZhZDE1ZmM0OTc4ZDEzMTk4OWUtMDhj_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
-        message: {{IP}}
+        message: "{{IP}}"
