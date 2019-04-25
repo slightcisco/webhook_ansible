@@ -5,6 +5,12 @@
   connection: local
 
   tasks:
+    - name: DEBUG| getting room ID
+      debug:var=RoomId
+
+    - name: DEBUG | Getting IP
+      debug:var=IP
+
     - name: messaging teams
       cisco_spark:
         recipient_type: roomId
