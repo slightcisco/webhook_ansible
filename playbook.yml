@@ -5,6 +5,11 @@
   connection: local
 
   tasks:
+    - name: Setting default values
+      set_fact:
+        RoomId: "Somthing went wrong"
+        IP: "Somthing went wrong"
+
     - name: DEBUG| getting room ID
       debug:var=RoomId
 
