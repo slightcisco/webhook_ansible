@@ -11,10 +11,12 @@
         IP: "Somthing went wrong"
 
     - name: DEBUG| getting room ID
-      debug:var=RoomId
+      debug:
+        var: RoomId
 
     - name: DEBUG | Getting IP
-      debug:var=IP
+      debug:
+        var: IP
 
     - name: messaging teams
       cisco_spark:
